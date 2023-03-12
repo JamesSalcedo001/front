@@ -2,8 +2,8 @@ function Form() {
     return (
         <div>
             <form>
-                <input placeholder="type shit here"/>
-                <button type="submit">Add shit</button>
+                <input placeholder="type stuff here"/>
+                <button type="submit">Add stuff</button>
             </form>
         </div>
     )

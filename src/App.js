@@ -1,7 +1,9 @@
 import './App.css';
 import Form from "./Form"
 import Header from "./Header"
+import Container from "./Container"
 import {useState, useEffect} from "react"
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
 
@@ -14,7 +16,17 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Form/>
+      <Switch>
+
+      <Route exact path="/form">
+        <Form/>
+      </Route>
+
+      <Route exact path="/">
+        <Container/>
+      </Route>
+
+      </Switch>
     </div>
   );
 }
