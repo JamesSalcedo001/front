@@ -1,34 +1,31 @@
 import './App.css';
-import Form from "./Form"
 import Header from "./Header"
 import Container from "./Container"
-import {useState, useEffect} from "react"
-import { Route, Switch } from 'react-router-dom';
 
 function App() {
-
-  useEffect(() => {
-    fetch("http://localhost:9292/test")
-    .then((res) => res.json())
-    .then(console.log)
-  })
   
   return (
     <div className="App">
       <Header/>
-      <Switch>
-
-      <Route exact path="/form">
-        <Form/>
-      </Route>
-
-      <Route exact path="/">
-        <Container/>
-      </Route>
-
-      </Switch>
+      <Container/>
     </div>
   );
 }
 
 export default App;
+
+
+/* app components: kitty shelter
+
+shelter has many cats
+cats belong to one shelter
+
+----header
+
+----home page: list of cats that need adoption(GET) + (cards rendered with adopt button(DELETE), name, age, breed, image, behavior)
+
+----shelter kitty page: page with form to take in a kitty from the rain(POST) creates a new kitty for the shelter
+
+----update kitty info: form component to edit the info on existing kitties(PATCH)
+
+*/
