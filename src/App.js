@@ -1,13 +1,13 @@
 import './App.css';
 import Header from "./Header"
-import Container from "./Container"
+import MainPage from "./MainPage"
 
 function App() {
   
   return (
     <div className="App">
       <Header/>
-      <Container/>
+      <MainPage/>
     </div>
   );
 }
