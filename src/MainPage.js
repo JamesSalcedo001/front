@@ -10,8 +10,9 @@ function MainPage() {
     useEffect(() => {
         fetch("http://localhost:9292/cats")
         .then((res) => res.json())
-        .then(console.log)
-      })
+        .then((catCollection) => setCats(catCollection))
+      },[])
+
 
     return (
         <div>
@@ -21,7 +22,7 @@ function MainPage() {
                 </Route>
 
                 <Route exact path="/">
-                    <CatsList/>
+                    <CatsList cats={cats}/>
                 </Route>
             </Switch>
 
