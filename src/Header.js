@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom"
 function Header() {
     return (
-        <header>
+        <header id="headerSection">
             <nav>
                 <h1>Kitty Shelter</h1>
                 <NavLink exact to="/cats">Cats</NavLink>

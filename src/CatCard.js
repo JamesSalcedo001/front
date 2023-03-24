@@ -9,13 +9,14 @@ function CatCard({catObj, catRemoved}) {
     }
 
     return (
-        <div>
+        <div className="cards">
             <img className="image" src={image} alt={name}/>
             <h3>Name: {name}</h3>
             <h3>Breed: {breed}</h3>
             <h3>Age: {age}</h3>
             <h3>Description: {descr}</h3>
-            <button onClick={removeCat}>Adopt!</button>
+            <button className="cardButton" onClick={removeCat}>Adopt!</button>
+            <button className="cardButton">Update Cat</button>
         </div>
     )
 }

@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(33, 69, 42);
 }
 
 code {
@@ -16,6 +17,50 @@ code {
 }
 
 .image {
-  height: 20vh;
-  width: 20vh;
+  height: 18vh;
+  width: 18vh;
+  padding: 1.5vh;
+  float: left;
+  border-radius: 3vh;
+}
+
+#catBox {
+  margin-left: -0.3vw;
+  background-color: rgb(163, 137, 66);
+  padding: 2.5vw;
+  width: 94.5vw;
+  height: max-content;
+  border-radius: 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  gap: 4vh 3vw;
+}
+
+.cards {
+  margin-left: -0.7vw;
+  width: 30vw;
+  height: 35vh;
+  background-color: rgb(212, 212, 212);
+  border: 0.4vh solid rgb(62, 62, 141);
+  border-radius: 3vh;
+}
+
+.cardButton {
+  background-color: rgb(29, 144, 117);
+  color: rgb(247, 231, 231);
+  height: 6vh;
+  border-radius: 1.9vh;
+  margin-top: 2vh;
+  font-size: x-large;
+  margin-right: 2vw;
+}
+
+#headerSection {
+  background-color: rgb(176, 171, 128);
+  height: 15vh;
+  padding: 1vw;
+  border-radius: 3vh;
+  margin-bottom: 58vh;
+  width: 98vw;
+  margin-left: -0.5vw;
 }
