@@ -1,4 +1,4 @@
-function Form() {
+function AddCatForm() {
     return (
         <div>
             <form>
@@ -9,4 +9,4 @@ function Form() {
     )
 }
 
-export default Form;
+export default AddCatForm;

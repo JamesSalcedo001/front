@@ -1,4 +1,5 @@
-import Form from "./Form"
+import AddCatForm from "./AddCatForm"
+import AddShelterForm from "./AddShelterForm"
 import CatsList from "./CatsList"
 import SheltersList from "./SheltersList"
 import {useState, useEffect} from "react"
@@ -25,15 +26,19 @@ function MainPage() {
     return (
         <div>
             <Switch>
-                <Route exact path="/form">
-                    <Form/>
+                <Route exact path="/addcatform">
+                    <AddCatForm/>
                 </Route>
 
-                <Route exact path="/shelterslist">
+                <Route exact path="/addshelterform">
+                    <AddShelterForm/>
+                </Route>
+
+                <Route exact path="/shelters">
                     <SheltersList shelters={shelters}/>
                 </Route>
 
-                <Route exact path="/">
+                <Route exact path="/cats">
                     <CatsList cats={cats}/>
                 </Route>
             </Switch>
