@@ -23,8 +23,12 @@ function MainPage() {
       },[])
 
 
+      function addCat(newCat) {
+        setCats((catArr) => [...catArr, newCat])
+      }
+
       function catRemoved(id) {
-        const removedCatArr = cats.filter((catObj) => catObj !== id)
+        const removedCatArr = cats.filter((catObj) => catObj.id !== id)
         setCats(removedCatArr)
       }
 
@@ -32,7 +36,7 @@ function MainPage() {
         <div>
             <Switch>
                 <Route exact path="/addcatform">
-                    <AddCatForm/>
+                    <AddCatForm addCat={addCat}/>
                 </Route>
 
                 <Route exact path="/addshelterform">

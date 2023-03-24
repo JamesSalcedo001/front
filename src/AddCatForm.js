@@ -1,7 +1,7 @@
 import {useState} from "react"
 import {useHistory} from "react-router-dom"
 
-function AddCatForm() {
+function AddCatForm({addCat}) {
 
     const history = useHistory()
 
@@ -19,6 +19,32 @@ function AddCatForm() {
         setFormData((formDataObj) => ({...formDataObj, [name]:value}))
     }
 
+    function submit(e) {
+        e.preventDefault()
+        const configObj = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({...formData}),
+        }
+
+        fetch("http://localhost:9292/cats", configObj)
+        .then((res) => res.json())
+        .then((newCat) => {
+            addCat(newCat)
+            setFormData({
+                name: "",
+                age: "",
+                breed: "",
+                descr: "",
+                image: "",
+                shelter_id: ""
+            })
+            history.push("/cats")
+        })
+    }
 
 
     return (
