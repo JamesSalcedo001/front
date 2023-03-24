@@ -23,6 +23,11 @@ function MainPage() {
       },[])
 
 
+      function catRemoved(id) {
+        const removedCatArr = cats.filter((catObj) => catObj !== id)
+        setCats(removedCatArr)
+      }
+
     return (
         <div>
             <Switch>
@@ -39,7 +44,7 @@ function MainPage() {
                 </Route>
 
                 <Route exact path="/cats">
-                    <CatsList cats={cats}/>
+                    <CatsList cats={cats} catRemoved={catRemoved}/>
                 </Route>
             </Switch>
 

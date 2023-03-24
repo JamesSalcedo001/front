@@ -1,5 +1,12 @@
-function CatCard({catObj}) {
+function CatCard({catObj, catRemoved}) {
     const {id, name, age, breed, descr, image} = catObj
+
+    function removeCat() {
+        fetch(`http://localhost:9292/cats/${id}`, {
+            method: "DELETE",
+        })
+        catRemoved(id)
+    }
 
     return (
         <div>
@@ -8,8 +15,7 @@ function CatCard({catObj}) {
             <h3>Breed: {breed}</h3>
             <h3>Age: {age}</h3>
             <h3>Description: {descr}</h3>
-            <button>Adopt!</button>
-            <form>Update cat new idea</form>
+            <button onClick={removeCat}>Adopt!</button>
         </div>
     )
 }
