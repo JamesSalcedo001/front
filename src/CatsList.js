@@ -8,7 +8,7 @@ function CatsList({cats, catRemoved}) {
 
     return (
         <div>
-            <ul id="catBox">{catMap}</ul>
+            <ul className="cardBox">{catMap}</ul>
         </div>
     )
 }

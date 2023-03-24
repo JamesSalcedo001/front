@@ -24,7 +24,7 @@ code {
   border-radius: 3vh;
 }
 
-#catBox {
+.cardBox {
   margin-left: -0.3vw;
   background-color: rgb(163, 137, 66);
   padding: 2.5vw;
