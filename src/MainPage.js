@@ -1,4 +1,5 @@
 import AddCatForm from "./AddCatForm"
+import EditCatForm from "./EditCatForm"
 import AddShelterForm from "./AddShelterForm"
 import CatsList from "./CatsList"
 import SheltersList from "./SheltersList"
@@ -45,6 +46,10 @@ function MainPage() {
 
                 <Route exact path="/addshelterform">
                     <AddShelterForm addShelter={addShelter}/>
+                </Route>
+
+                <Route exact path="/editcatform">
+                    <EditCatForm />
                 </Route>
 
                 <Route exact path="/shelters">
