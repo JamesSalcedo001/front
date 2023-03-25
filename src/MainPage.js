@@ -27,6 +27,10 @@ function MainPage() {
         setCats((catArr) => [...catArr, newCat])
       }
 
+      function addShelter(newShelter) {
+        setShelters((shelterArr) => [...shelterArr, newShelter])
+      }
+
       function catRemoved(id) {
         const removedCatArr = cats.filter((catObj) => catObj.id !== id)
         setCats(removedCatArr)
@@ -40,11 +44,11 @@ function MainPage() {
                 </Route>
 
                 <Route exact path="/addshelterform">
-                    <AddShelterForm/>
+                    <AddShelterForm addShelter={addShelter}/>
                 </Route>
 
                 <Route exact path="/shelters">
-                    <SheltersList shelters={shelters}/>
+                    <SheltersList shelters={shelters} />
                 </Route>
 
                 <Route exact path="/cats">
