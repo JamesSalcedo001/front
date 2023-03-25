@@ -25,15 +25,16 @@ code {
 }
 
 .cardBox {
-  margin-left: -0.3vw;
+  margin-left: -0.6vw;
   background-color: rgb(163, 137, 66);
-  padding: 2.5vw;
+  padding: 2.6vw;
   width: 94.5vw;
-  height: max-content;
-  border-radius: 3vw;
+  border-radius: 3vh;
   display: grid;
-  grid-template-columns: repeat(3, 30vw);
-  gap: 4vh 3vw;
+  grid-template-columns: repeat(3, 29.5vw);
+  grid-auto-rows: minmax(150px, auto);
+  justify-content: center;
+  gap: 4vh 2.5vw;
 }
 
 .cards {
