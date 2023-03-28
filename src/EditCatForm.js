@@ -4,22 +4,22 @@ function EditCatForm() {
             <section>
                 <form>
                     <label>Name</label>
-                    <input/>
+                    <input value={} onChange={} type="text" name="name" placeholder=""/>
 
                     <label>Breed</label>
-                    <input/>
+                    <input value={} onChange={} type="text" name="breed" placeholder=""/>
 
                     <label>Age</label>
-                    <input/>
+                    <input value={} onChange={} type="text" name="age" placeholder=""/>
 
                     <label>Description</label>
-                    <input/>
+                    <input value={} onChange={} type="text" name="description" placeholder=""/>
 
                     <label>Image</label>
-                    <input/>
+                    <input value={} onChange={} type="text" name="image" placeholder=""/>
 
                     <label>Shelter ID</label>
-                    <input/>
+                    <input value={} onChange={} type="text" name="shelter_id" placeholder=""/>
 
                     <button type="submit">Update Cat</button>
 
