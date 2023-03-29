@@ -65,11 +65,37 @@ code {
   margin-bottom: 30vh;
   width: 98vw;
   margin-left: -0.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navButtons {
+  background-color: rgb(196, 159, 122);
+  color: rgb(113, 65, 17);
+  text-decoration: none;
+  font-size: x-large;
+  font-weight:bold;
+  display: inline-block;
+  /* margin-right: 3vw; */
+  padding: 6vh;
+  border-radius: 1vw;
+  border: 0.4vw solid rgb(113, 65, 17);
+}
+
+#title {
+  background-color: rgb(122, 175, 196);
+  border-radius: 3vh;
+  border: 0.4vw solid rgb(113, 65, 17);
+  color: rgb(157, 113, 70);
+  padding: 6vh;
 }
 
 .formStyle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 2vh;
   border-radius: 3vh;
   text-align: center;
   background-color: rgb(78, 57, 19);
