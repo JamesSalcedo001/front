@@ -48,8 +48,8 @@ function MainPage() {
                     <AddShelterForm addShelter={addShelter}/>
                 </Route>
 
-                <Route exact path="/editcatform">
-                    <EditCatForm />
+                <Route exact path="/editcatform/:id">
+                    <EditCatForm cats={cats}/>
                 </Route>
 
                 <Route exact path="/shelters">
