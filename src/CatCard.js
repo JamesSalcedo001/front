@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 function CatCard({catObj, catRemoved}) {
     const {id, name, age, breed, descr, image} = catObj
 
@@ -16,7 +18,9 @@ function CatCard({catObj, catRemoved}) {
             <h3>Age: {age}</h3>
             <h3>Description: {descr}</h3>
             <button className="cardButton" onClick={removeCat}>Adopt!</button>
-            <button className="cardButton">Update Cat</button>
+            <NavLink to={`/editcatform/${id}`}>
+                <button className="cardButton">Update Cat</button>
+            </NavLink>
         </div>
     )
 }

@@ -50,7 +50,7 @@ function AddCatForm({addCat}) {
     return (
         <div>
             <section>
-                <form onSubmit={submit}>
+                <form className="formStyle" onSubmit={submit}>
                     <label htmlFor="name">Cat Name</label>
                     <input type="text" name="name" value={formData.name} onChange={changeHandler} placeholder="name" />
 
@@ -69,7 +69,7 @@ function AddCatForm({addCat}) {
                     <label htmlFor="shelter_id">Closest Shelter</label>
                     <input type="number" step="1" name="shelter_id" value={formData.shelter_id} onChange={changeHandler} placeholder="shelter_id"/>
 
-                    <button type="submit">Add Cat</button>
+                    <input type="submit" value="Add Cat"/>
                 </form>
             </section>
         </div>

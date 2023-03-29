@@ -46,7 +46,7 @@ function AddShelterForm({addShelter}) {
 
     return (
         <div>
-            <form onSubmit={submit}>
+            <form className="formStyle" onSubmit={submit}>
                 <label htmlFor="name">Shelter Name</label>
                 <input onChange={changeHandler} value={formData.name} placeholder="shelter name"/>
 
@@ -59,7 +59,7 @@ function AddShelterForm({addShelter}) {
                 <label htmlFor="image">Shelter Image</label>
                 <input onChange={changeHandler} value={formData.image} placeholder="shelter image" alt={formData.name}/>
 
-                <button type="submit">Add Shelter</button>
+                <input type="submit" value="Add Shelter"/>
             </form>
         </div>
     )

@@ -38,16 +38,17 @@ code {
 }
 
 .cards {
+  color:rgb(127, 186, 192);
   margin-left: -0.7vw;
   width: 30vw;
   height: 35vh;
-  background-color: rgb(212, 212, 212);
-  border: 0.4vh solid rgb(62, 62, 141);
+  background-color: rgb(78, 57, 19);
+  border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
 }
 
 .cardButton {
-  background-color: rgb(29, 144, 117);
+  background-color: rgb(168, 78, 26);
   color: rgb(247, 231, 231);
   height: 6vh;
   border-radius: 1.9vh;
@@ -61,7 +62,26 @@ code {
   height: 15vh;
   padding: 1vw;
   border-radius: 3vh;
-  margin-bottom: 58vh;
+  margin-bottom: 30vh;
   width: 98vw;
   margin-left: -0.5vw;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3vh;
+  text-align: center;
+  background-color: rgb(78, 57, 19);
+  width: 50%;
+  margin: auto;
+}
+
+input {
+  background-color: rgb(116, 155, 196);
+  padding: 2vh;
+  border-radius: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-size: larger;
 }

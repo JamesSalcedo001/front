@@ -37,6 +37,18 @@ function MainPage() {
         setCats(removedCatArr)
       }
 
+      function editCat(target) {
+        const updateCats = cats.map((catObj) => {
+            if (catObj.id == target.id) {
+                return target
+            } else {
+                return catObj
+            }
+        })
+        setCats(updateCats)
+      }
+
+
     return (
         <div>
             <Switch>
@@ -49,7 +61,7 @@ function MainPage() {
                 </Route>
 
                 <Route exact path="/editcatform/:id">
-                    <EditCatForm cats={cats}/>
+                    <EditCatForm cats={cats} editCat={editCat}/>
                 </Route>
 
                 <Route exact path="/shelters">

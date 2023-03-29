@@ -1,19 +1,46 @@
 import {useState} from "react"
+import {useHistory, useParams} from "react-router-dom"
 
-function EditCatForm({cats}) {
+function EditCatForm({cats, editCat}) {
     const {name, age, breed, descr, image, shelter_id} = cats
 
     const [formData, setFormData] = useState(cats)
 
+    const history = useHistory()
+    const { id } = useParams()
+
     function changeHandler(e) {
-        const { name, value } = e.target
+        const {name, value} = e.target
         setFormData((formDataObj) => ({...formDataObj, [name]:value }))
+    }
+
+    function submit(e) {
+        e.preventDefault()
+        fetch(`http://localhost:9292/cats/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                age: formData.age,
+                breed: formData.breed,
+                descr: formData.descr,
+                image: formData.image,
+                shelter_id: formData.shelter_id
+            })
+        })
+        .then((res) => res.json())
+        .then((targetCat) => {
+            editCat(targetCat)
+        })
+        history.push("/cats")
     }
 
     return (
         <div>
             <section>
-                <form>
+                <form className="formStyle" onSubmit={submit}>
                     <label>Name</label>
                     <input value={name} onChange={changeHandler} type="text" name="name" placeholder="name"/>
 
@@ -32,7 +59,7 @@ function EditCatForm({cats}) {
                     <label>Shelter ID</label>
                     <input value={shelter_id} onChange={changeHandler} type="number" step="1" name="shelter_id" placeholder="shelter_id"/>
 
-                    <button type="submit">Update Cat</button>
+                    <input type="submit" value="Update Cat"/>
 
                 </form>
             </section>
