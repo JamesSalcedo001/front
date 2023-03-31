@@ -11,7 +11,7 @@ function ShelterCard({shelterObj}) {
             <h3>LOCATION: {location}</h3>
             <h3>EMPLOYEES: {employees}</h3>
             Shelter Cats:
-            <select id="cars">
+            <select id="selector">
                 {shelterObj.cats.map((option) => ( <option key={option.name} value={option.value}>{option.name}</option>))}
             </select>
         </div>

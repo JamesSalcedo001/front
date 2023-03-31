@@ -189,3 +189,11 @@ code {
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
 }
+
+#selector {
+  margin-left: 1vw;
+  border-radius: 1vh;
+  background-color: rgb(127, 186, 192);
+  font-size: large;
+  color: rgb(4, 19, 72);
+}
