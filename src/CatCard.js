@@ -59,7 +59,7 @@ function CatCard({catObj, catRemoved, editCat}) {
             <h3>Description: {descr}</h3>
             {isEditing ? (
             <form id="cardForm" onSubmit={submit}>
-                Edit Cat Here (maybe conditional  rendering)
+                Edit Cat Here
                 <input className="formInputCard" value={newImage} type="text" onChange={(e) => setNewImage(e.target.value)} placeholder="new image"/>
                 <input className="formInputCard" value={newName} type="text" onChange={(e) => setNewName(e.target.value)} placeholder="new name"/>
                 <input className="formInputCard" value={newBreed} type="text" onChange={(e) => setNewBreed(e.target.value)} placeholder="new breed"/>

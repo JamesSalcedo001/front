@@ -74,12 +74,11 @@ code {
   padding: 6vh;
   border-radius: 1vw;
   border: 0.4vw solid rgb(113, 65, 17);
-  /* transform: translateX(20px) translateY(20px); */
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .navButtons:hover {
-  translate: -30px -30px -30px;
+  translate: -20px -20px -20px;
 }
 
 #title {
@@ -91,6 +90,8 @@ code {
 }
 
 .formStyle {
+  font-size: large;
+  color: rgb(157, 113, 70);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,11 +144,11 @@ code {
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .catCards:hover {
-  translate: -30px -30px -30px;
+  translate: -20px -20px -20px;
 }
 
 .cardButton {
@@ -199,12 +200,12 @@ code {
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
-  transition: 0.5s;
+  transition: 0.3s;
 
 }
 
 .shelterCards:hover {
-  translate: -30px -30px -30px;
+  translate: -20px -20px -20px;
 }
 
 #selector {

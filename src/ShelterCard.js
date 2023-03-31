@@ -1,8 +1,7 @@
 
 function ShelterCard({shelterObj}) {
     const {name, location, image, employees} = shelterObj
-    // console.log(shelterObj.cats)
-   
+
 
     return (
         <div className="shelterCards">
