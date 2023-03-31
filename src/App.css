@@ -137,6 +137,12 @@ code {
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
+  transform: translateX(20px) translateY(20px);
+  transition: 1s;
+}
+
+.catCards:hover {
+  translate: -50px -70px -30px;
 }
 
 .cardButton {
@@ -188,6 +194,13 @@ code {
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
+  transform: translateX(20px) translateY(20px);
+  transition: 1s;
+
+}
+
+.shelterCards:hover {
+  translate: -50px -50px -30px;
 }
 
 #selector {
