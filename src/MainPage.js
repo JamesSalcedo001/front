@@ -64,7 +64,7 @@ function MainPage() {
                     <SheltersList shelters={shelters} />
                 </Route>
 
-                <Route exact path="/cats">
+                <Route exact path="/">
                     <CatsList cats={cats} catRemoved={catRemoved} editCat={editCat}/>
                 </Route>
             </Switch>

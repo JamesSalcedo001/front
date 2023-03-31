@@ -51,8 +51,8 @@ function CatCard({catObj, catRemoved, editCat}) {
             <h3>Breed: {breed}</h3>
             <h3>Age: {age}</h3>
             <h3>Description: {descr}</h3>
-            <button className="cardButton" onClick={removeCat}>Adopt!</button>
             <form id="cardForm" onSubmit={submit}>
+                Edit Cat Here (maybe conditional  rendering)
                 <input className="formInputCard" value={newImage} type="text" onChange={(e) => setNewImage(e.target.value)} placeholder="new image"/>
                 <input className="formInputCard" value={newName} type="text" onChange={(e) => setNewName(e.target.value)} placeholder="new name"/>
                 <input className="formInputCard" value={newBreed} type="text" onChange={(e) => setNewBreed(e.target.value)} placeholder="new breed"/>
@@ -61,6 +61,7 @@ function CatCard({catObj, catRemoved, editCat}) {
                 <input className="formInputCard" value={newShelterId} type="number" onChange={(e) => setNewShelterId(parseFloat(e.target.value))} placeholder="new description"/>
                 <input className="formInputCard" type="submit"/>
             </form>
+            <button className="cardButton" onClick={removeCat}>Adopt!</button>
         </div>
     )
 }
