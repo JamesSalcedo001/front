@@ -11,7 +11,7 @@ function CatsList({cats, catRemoved, editCat}) {
 
     return (
         <div>
-            <ul className="cardBox">{catMap}</ul>
+            <ul className="catCardBox">{catMap}</ul>
         </div>
     )
 }

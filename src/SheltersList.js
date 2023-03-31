@@ -8,7 +8,7 @@ function SheltersList({shelters}) {
 
     return (
         <div>
-            <ul className="cardBox">{shelterMap}</ul>
+            <ul className="shelterCardBox">{shelterMap}</ul>
         </div>
     )
 }

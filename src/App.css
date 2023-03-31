@@ -118,7 +118,7 @@ code {
 
 /* form on cards */
 
-.cardBox {
+.catCardBox {
   background-color: rgb(163, 137, 66);
   padding: 2.6vw;
   width: 94.5vw;
@@ -129,7 +129,7 @@ code {
   gap: 5vh 2vw;
 }
 
-.cards {
+.catCards {
   color:rgb(127, 186, 192);
   margin-left: 0.8vw;
   width: 45vw;
@@ -163,4 +163,29 @@ code {
   background-color: rgb(116, 155, 196);
   padding: 0.2vh;
   font-size: large;
+}
+
+
+
+ .shelterCardBox {
+  margin-left: -0.6vw;
+  background-color: rgb(163, 137, 66);
+  padding: 2.6vw;
+  width: 94.5vw;
+  border-radius: 3vh;
+  display: grid;
+  grid-template-columns: repeat(3, 29.5vw);
+  grid-auto-rows: minmax(150px, auto);
+  justify-content: center;
+  gap: 4vh 2.5vw;
+}
+
+.shelterCards {
+  color:rgb(127, 186, 192);
+  margin-left: -0.7vw;
+  width: 30vw;
+  height: 35vh;
+  background-color: rgb(78, 57, 19);
+  border: 0.4vh solid rgb(186, 194, 122);
+  border-radius: 3vh;
 }

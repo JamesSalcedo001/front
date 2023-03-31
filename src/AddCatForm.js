@@ -42,7 +42,7 @@ function AddCatForm({addCat}) {
                 image: "",
                 shelter_id: ""
             })
-            history.push("/cats")
+            history.push("/")
         })
     }
 

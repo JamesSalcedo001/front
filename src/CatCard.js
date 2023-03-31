@@ -3,6 +3,7 @@ import { useState } from "react";
 
 function CatCard({catObj, catRemoved, editCat}) {
     const {id, name, age, breed, descr, image, shelter_id } = catObj
+    const [isEditing, setIsEditing] = useState(false)
 
     const [newName, setNewName] = useState(name)
     const [newBreed, setNewBreed] = useState(breed)
@@ -11,6 +12,10 @@ function CatCard({catObj, catRemoved, editCat}) {
     const [newImage, setNewImage] = useState(image)
     const [newShelterId, setNewShelterId] = useState(shelter_id)
 
+
+    function editing() {
+        setIsEditing((isEditing) => !isEditing)
+    }
 
     function removeCat() {
         fetch(`http://localhost:9292/cats/${id}`, {
@@ -39,18 +44,20 @@ function CatCard({catObj, catRemoved, editCat}) {
         .then((res) => res.json())
         .then((targetCat) => {
             editCat(targetCat)
+            setIsEditing((isEditing) => !isEditing)
         })
     }
 
    
 
     return (
-        <div className="cards">
+        <div className="catCards">
             <img className="image" src={image} alt={name}/>
             <h3>Name: {name}</h3>
             <h3>Breed: {breed}</h3>
             <h3>Age: {age}</h3>
             <h3>Description: {descr}</h3>
+            {isEditing ? (
             <form id="cardForm" onSubmit={submit}>
                 Edit Cat Here (maybe conditional  rendering)
                 <input className="formInputCard" value={newImage} type="text" onChange={(e) => setNewImage(e.target.value)} placeholder="new image"/>
@@ -60,7 +67,10 @@ function CatCard({catObj, catRemoved, editCat}) {
                 <input className="formInputCard" value={newDescr} type="text" onChange={(e) => setNewDescr(e.target.value)} placeholder="new description"/>
                 <input className="formInputCard" value={newShelterId} type="number" onChange={(e) => setNewShelterId(parseFloat(e.target.value))} placeholder="new description"/>
                 <input className="formInputCard" type="submit"/>
-            </form>
+            </form> ) : 
+            (
+                <button onClick={editing}>Edit</button>
+            )}
             <button className="cardButton" onClick={removeCat}>Adopt!</button>
         </div>
     )
@@ -98,7 +108,7 @@ export default CatCard;
 
 
 // import { NavLink } from "react-router-dom"
-{/* <NavLink to={`/editcatform/${id}`}> */}
-{/* <button className="cardButton">Update Cat</button> */}
-{/* <EditCatForm cats={catObj} editCat={editCat} /> */}
-{/* </NavLink> */}           
+/* <NavLink to=`/editcatform/$id}`}> */
+/* <button className="cardButton">Update Cat</button> */
+/* <EditCatForm cats={catObj} editCat={editCat} /> */
+/* </NavLink> */           

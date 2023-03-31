@@ -97,9 +97,9 @@ export default MainPage;
 
 
 
-{/* <Route exact path="/editcatform/:id">
+/* <Route exact path="/editcatform/:id">
         <EditCatForm cats={cats} editCat={editCat} />
-    </Route> */}
+    </Route> */
 
 
 
