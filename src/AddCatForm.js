@@ -52,24 +52,24 @@ function AddCatForm({addCat}) {
             <section>
                 <form className="formStyle" onSubmit={submit}>
                     <label htmlFor="name">Cat Name</label>
-                    <input type="text" name="name" value={formData.name} onChange={changeHandler} placeholder="name" />
+                    <input className="formInput" type="text" name="name" value={formData.name} onChange={changeHandler} placeholder="name" />
 
                     <label htmlFor="breed">Cat Breed</label>
-                    <input type="text" name="breed" value={formData.breed} onChange={changeHandler} placeholder="breed" />
+                    <input className="formInput" type="text" name="breed" value={formData.breed} onChange={changeHandler} placeholder="breed" />
 
                     <label htmlFor="age">Cat Age</label>
-                    <input type="text" name="age" value={formData.age} onChange={changeHandler} placeholder="age"/>
+                    <input className="formInput" type="text" name="age" value={formData.age} onChange={changeHandler} placeholder="age"/>
 
                     <label htmlFor="descr">Cat Description</label>
-                    <input type="text" name="descr" value={formData.descr} onChange={changeHandler} placeholder="description"/>
+                    <input className="formInput" type="text" name="descr" value={formData.descr} onChange={changeHandler} placeholder="description"/>
 
                     <label htmlFor="image">Cat IamgeURL</label>
-                    <input type="text" name="image" value={formData.image} onChange={changeHandler} placeholder="image"/>
+                    <input className="formInput" type="text" name="image" value={formData.image} onChange={changeHandler} placeholder="image"/>
 
                     <label htmlFor="shelter_id">Closest Shelter</label>
-                    <input type="number" step="1" name="shelter_id" value={formData.shelter_id} onChange={changeHandler} placeholder="shelter_id"/>
+                    <input className="formInput" type="number" step="1" name="shelter_id" value={formData.shelter_id} onChange={changeHandler} placeholder="shelter_id"/>
 
-                    <input type="submit" value="Add Cat"/>
+                    <input className="formInput" type="submit" value="Add Cat"/>
                 </form>
             </section>
         </div>

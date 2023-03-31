@@ -3,11 +3,11 @@ function Header() {
     return (
         <header>
             <nav id="headerSection">
-                <h1 id="title">Kitty Shelter</h1>
-                <NavLink className="navButtons" exact to="/cats">Cats List</NavLink>
+                <h1 id="title">🐈  Kitty Shelter 🏠</h1>
+                <NavLink className="navButtons" exact to="/cats">Cats List 🐈 </NavLink>
                 <NavLink className="navButtons" exact to="/addcatform">Add Cats</NavLink>
                 <NavLink className="navButtons" exact to="/addshelterform">Add Shelters</NavLink>
-                <NavLink className="navButtons" exact to="/shelters">Shelters</NavLink>
+                <NavLink className="navButtons" exact to="/shelters">Shelters 🏠</NavLink>
             </nav>
         </header>
     )

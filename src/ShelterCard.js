@@ -1,3 +1,4 @@
+
 function ShelterCard({shelterObj}) {
     const {name, location, image, employees} = shelterObj
    
@@ -8,13 +9,15 @@ function ShelterCard({shelterObj}) {
             <h1>NAME: {name}</h1>
             <h3>LOCATION: {location}</h3>
             <h3>EMPLOYEES: {employees}</h3>
+            <select id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
         </div>
     )
 }
 
 export default ShelterCard;
 
-    
-    // console.log(catObj.shelter.name)
-    // console.log(catObj.shelter.location)
-    // console.log(catObj.shelter.image)

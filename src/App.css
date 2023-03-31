@@ -1,4 +1,4 @@
-.App {
+ .App {
   text-align: center;
 }
 
@@ -16,15 +16,9 @@ code {
     monospace;
 }
 
-.image {
-  height: 18vh;
-  width: 18vh;
-  padding: 1.5vh;
-  float: left;
-  border-radius: 3vh;
-}
 
-.cardBox {
+
+/* .cardBox {
   margin-left: -0.6vw;
   background-color: rgb(163, 137, 66);
   padding: 2.6vw;
@@ -55,7 +49,7 @@ code {
   margin-top: 2vh;
   font-size: x-large;
   margin-right: 2vw;
-}
+} */
 
 #headerSection {
   background-color: rgb(176, 171, 128);
@@ -77,7 +71,6 @@ code {
   font-size: x-large;
   font-weight:bold;
   display: inline-block;
-  /* margin-right: 3vw; */
   padding: 6vh;
   border-radius: 1vw;
   border: 0.4vw solid rgb(113, 65, 17);
@@ -101,13 +94,77 @@ code {
   background-color: rgb(78, 57, 19);
   width: 50%;
   margin: auto;
-}
+} 
 
-input {
+ .formInput {
   background-color: rgb(116, 155, 196);
   padding: 2vh;
   border-radius: 2vh;
   margin-top: 3vh;
   margin-bottom: 2vh;
   font-size: larger;
+} 
+
+.image {
+  height: 18vh;
+  width: 18vh;
+  padding: 1.5vh;
+  float: left;
+  border-radius: 3vh;
+}
+
+
+
+
+/* form on cards */
+
+.cardBox {
+  margin-left: -0.6vw;
+  background-color: rgb(163, 137, 66);
+  padding: 2.6vw;
+  width: 94.5vw;
+  border-radius: 3vh;
+  display: grid;
+  grid-template-columns: repeat(3, 29.5vw);
+  grid-auto-rows: minmax(150px, auto);
+  justify-content: center;
+  gap: 4vh 5.5vw;
+}
+
+.cards {
+  color:rgb(127, 186, 192);
+  margin-left: -0.7vw;
+  width: 35vw;
+  height: 50vh;
+  background-color: rgb(78, 57, 19);
+  border: 0.4vh solid rgb(186, 194, 122);
+  border-radius: 3vh;
+}
+
+.cardButton {
+  background-color: rgb(168, 78, 26);
+  color: rgb(247, 231, 231);
+  height: 6vh;
+  border-radius: 1.9vh;
+  margin-top: 2vh;
+  font-size: x-large;
+  margin-right: 2vw;
+}
+
+#cardForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 2vh; */
+  border-radius: 3vh;
+  text-align: center;
+  background-color: rgb(78, 57, 19);
+  width: 80%;
+  margin: auto;
+}
+
+.formInputCard {
+  background-color: rgb(116, 155, 196);
+  border-radius: 3vh;
+
 }

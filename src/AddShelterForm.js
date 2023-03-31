@@ -48,18 +48,18 @@ function AddShelterForm({addShelter}) {
         <div>
             <form className="formStyle" onSubmit={submit}>
                 <label htmlFor="name">Shelter Name</label>
-                <input onChange={changeHandler} value={formData.name} placeholder="shelter name"/>
+                <input className="formInput" type="text" name="name" onChange={changeHandler} value={formData.name} placeholder="shelter name"/>
 
-                <label htmFor="location">Shelter Location</label>
-                <input onChange={changeHandler} value={formData.location} placeholder="shelter location"/>
+                <label htmlFor="location">Shelter Location</label>
+                <input className="formInput" type="text" name="location" onChange={changeHandler} value={formData.location} placeholder="shelter location"/>
 
                 <label htmlFor="employees">Number of Employees</label>
-                <input onChange={changeHandler} value={formData.employees} placeholder="number of employees"/>
+                <input className="formInput" type="number" name="employees" onChange={changeHandler} value={formData.employees} placeholder="number of employees"/>
 
                 <label htmlFor="image">Shelter Image</label>
-                <input onChange={changeHandler} value={formData.image} placeholder="shelter image" alt={formData.name}/>
+                <input className="formInput" type="text" name="image" onChange={changeHandler} value={formData.image} placeholder="shelter image" alt={formData.name}/>
 
-                <input type="submit" value="Add Shelter"/>
+                <input className="formInput" type="submit" value="Add Shelter"/>
             </form>
         </div>
     )
