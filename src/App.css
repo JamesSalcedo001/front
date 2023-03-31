@@ -75,11 +75,11 @@ code {
   border-radius: 1vw;
   border: 0.4vw solid rgb(113, 65, 17);
   /* transform: translateX(20px) translateY(20px); */
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .navButtons:hover {
-  translate: -40px -50px -30px;
+  translate: -30px -30px -30px;
 }
 
 #title {
@@ -143,11 +143,11 @@ code {
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .catCards:hover {
-  translate: -30px -50px -30px;
+  translate: -30px -30px -30px;
 }
 
 .cardButton {
@@ -199,12 +199,12 @@ code {
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;
-  transition: 1s;
+  transition: 0.5s;
 
 }
 
 .shelterCards:hover {
-  translate: -50px -50px -30px;
+  translate: -30px -30px -30px;
 }
 
 #selector {
