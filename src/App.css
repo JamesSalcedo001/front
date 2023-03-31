@@ -133,7 +133,7 @@ code {
   color:rgb(127, 186, 192);
   margin-left: 0.8vw;
   width: 45vw;
-  height: 60vh;
+  height: max-content;
   background-color: rgb(78, 57, 19);
   border: 0.4vh solid rgb(186, 194, 122);
   border-radius: 3vh;

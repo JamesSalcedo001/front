@@ -69,7 +69,7 @@ function CatCard({catObj, catRemoved, editCat}) {
                 <input className="formInputCard" type="submit"/>
             </form> ) : 
             (
-                <button onClick={editing}>Edit</button>
+                <button className="cardButton" onClick={editing}>Edit</button>
             )}
             <button className="cardButton" onClick={removeCat}>Adopt!</button>
         </div>

@@ -1,6 +1,7 @@
 
 function ShelterCard({shelterObj}) {
     const {name, location, image, employees} = shelterObj
+    // console.log(shelterObj.cats)
    
 
     return (
@@ -9,11 +10,9 @@ function ShelterCard({shelterObj}) {
             <h1>NAME: {name}</h1>
             <h3>LOCATION: {location}</h3>
             <h3>EMPLOYEES: {employees}</h3>
+            Shelter Cats:
             <select id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
+                {shelterObj.cats.map((option) => ( <option key={option.name} value={option.value}>{option.name}</option>))}
             </select>
         </div>
     )
