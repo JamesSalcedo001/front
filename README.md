@@ -21,6 +21,9 @@ To run the app, cd into the react app directory, and then run:
 npm start
 ```
 This app works with a separate back end so one can either set up a json-server or create a backend to work with the front end.
+I used Ruby with ActiveRecord and Sinatra for my backend, here is a link to that repo if you are interested:
+
+https://github.com/JamesSalcedo001/phase-3-sinatra-react-project
 
 The routes I set up for my two models in the backend are: 
 
