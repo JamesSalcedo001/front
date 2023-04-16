@@ -148,19 +148,19 @@ function MainPage() {
                 </Route>
 
                 <Route exact path="/shelters">
-                    <SheltersList/>
+                    <SheltersList shelters={shelterState} catState={catState}/>
                 </Route>
 
                 <Route exact path="/add_shelter">
-                    <AddShelterForm/>
+                    <AddShelterForm addShelter={addShelter}/>
                 </Route>
 
                 <Route exact path="/add_cat">
-                    <AddCatForm/>
+                    <AddCatForm addCat={addCat} shelters={shelterState}/>
                 </Route>
 
                 <Route exact path="/">
-                    <CatsList/>
+                    <CatsList catState={catState} catRemoved={catRemoved} setClickedCat={setClickedCat}/>
                 </Route>
             </Switch>
         </div>
