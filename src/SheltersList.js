@@ -1,16 +1,16 @@
-import ShelterCard from "./ShelterCard"
+// import ShelterCard from "./ShelterCard"
 
-function SheltersList({shelters}) {
+// function SheltersList({shelters, cats}) {
     
-    const shelterMap = shelters.map((shelterObj) => {
-        return <ShelterCard key={shelterObj.id} shelterObj={shelterObj}/>
-    })
+//     const shelterMap = shelters.map((shelterObj) => {
+//         return <ShelterCard key={shelterObj.id} shelterObj={shelterObj} cats={cats}/>
+//     })
 
-    return (
-        <div>
-            <ul className="shelterCardBox">{shelterMap}</ul>
-        </div>
-    )
-}
+//     return (
+//         <div>
+//             <ul className="shelterCardBox">{shelterMap}</ul>
+//         </div>
+//     )
+// }
 
-export default SheltersList;
+// export default SheltersList;
