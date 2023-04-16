@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Welcome to Kitty Shelter!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cats need homes, and we give them one until you are ready to welcome them to yours!
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+For starters, you just need to create a new react app in the terminal by running the command:
 
-### `npm start`
+```bash
+npx create-react-app name-of-app
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+as well as this command for using react router:
+```bash
+npm install react-router-dom@5
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+To run the app, cd into the react app directory, and then run:
+```
+npm start
+```
+This app works with a separate back end so one can either set up a json-server or create a backend to work with the front end.
+I used Ruby with ActiveRecord and Sinatra for my backend, here is a link to that repo if you are interested:
 
-### `npm test`
+https://github.com/JamesSalcedo001/phase-3-sinatra-react-project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The routes I set up for my two models in the backend are: 
 
-### `npm run build`
+Cats: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1: GET: "http://localhost:9292/cats"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2: POST: "http://localhost:9292/cats"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3: PATCH: "http://localhost:9292/cats/{id}"
 
-### `npm run eject`
+4: DELETE: "http://localhost:9292/cats/{id}"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Shelters: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1: GET: "http://localhost:9292/shelters"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2: POST: "http://localhost:9292/shelters"
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To interact with the app, in the header there are four nav links. You can view a list of cats in the shelters, add a new cat to the shelter, add a new shelter, or you can view the list of current shelters available. On the cards, you can edit the cat information with the Edit button, and remove the cat from the shelters with the Adopt button.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screen Shot 2023-03-31 at 7 16 31 PM](https://user-images.githubusercontent.com/107723341/229255868-0f19c4bf-6ee2-4c09-804c-a6f93dfac1fd.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screen Shot 2023-03-31 at 7 17 22 PM](https://user-images.githubusercontent.com/107723341/229255967-05cf8400-d781-4ce5-ad07-67ccc075133b.png)
 
-### Code Splitting
+![Screen Shot 2023-03-31 at 7 17 46 PM](https://user-images.githubusercontent.com/107723341/229255982-2dee8c68-0554-4beb-9ab7-eae2e8808beb.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Please make sure to update tests as appropriate.
 
-### Advanced Configuration
+## Credit
+These cat images were from google images, I do not own any of these pictures.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://choosealicense.com/licenses/mit/)
