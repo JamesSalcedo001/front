@@ -1,24 +1,21 @@
-// import CatCard from "./CatCard"
+import CatCard from "./CatCard"
 
-// function CatsList({cats, catRemoved, editCat}) {
+function CatsList({catState, catRemoved, setClickedCat}) {
    
 
     
-//     const catMap = cats.map((catObj) => {
-//         return <CatCard 
-//         key={catObj.id}
-//         catObj={catObj}
-//         catRemoved={catRemoved} 
-//         editCat={editCat}
-//         />
-//     })
+    const catMap = catState.map(catObj => {
+        return (
+            <CatCard key={catObj.id} catObj={catObj} setClickedCat={setClickedCat} catRemoved={catRemoved}/>
+        )
+    })
     
 
-//     return (
-//         <div>
-//             <ul className="catCardBox">{catMap}</ul>
-//         </div>
-//     )
-// }
+    return (
+        <div>
+            <ul className="catCardBox">{catMap}</ul>
+        </div>
+    )
+}
 
-// export default CatsList;
+export default CatsList;
