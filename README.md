@@ -43,14 +43,24 @@ Shelters:
 
 2: POST: "http://localhost:9292/shelters"
 
-To interact with the app, in the header there are four nav links. You can view a list of cats in the shelters, add a new cat to the shelter, add a new shelter, or you can view the list of current shelters available. On the cards, you can edit the cat information with the Edit button, and remove the cat from the shelters with the Adopt button.
+To interact with the app, in the header there are four nav links. You can view a list of cats in the shelters 
+![Screen Shot 2023-04-17 at 1 38 08 PM](https://user-images.githubusercontent.com/107723341/232581303-371a7cb4-afa0-430f-b1cf-f6da270be077.png)
+
+On the cards, you can edit the cat information with the Edit button, and remove the cat from the shelters with the Adopt button.
+![Screen Shot 2023-04-17 at 1 38 57 PM](https://user-images.githubusercontent.com/107723341/232581398-28bf2b90-1866-4dee-b69a-3f3b965233d1.png)
+
+you can click on the cat and update its information, which shelter it lives in, name, age, etc.
+![Screen Shot 2023-04-17 at 1 39 34 PM](https://user-images.githubusercontent.com/107723341/232581439-10b40112-cf6b-4c3b-bb11-63d024a9ad5a.png)
 
 
-![Screen Shot 2023-03-31 at 7 16 31 PM](https://user-images.githubusercontent.com/107723341/229255868-0f19c4bf-6ee2-4c09-804c-a6f93dfac1fd.png)
+add a new cat to the shelter,
+![Screen Shot 2023-04-17 at 1 47 12 PM](https://user-images.githubusercontent.com/107723341/232582379-42329310-1ba2-4b79-a3dc-2722953e619e.png)
 
-![Screen Shot 2023-03-31 at 7 17 22 PM](https://user-images.githubusercontent.com/107723341/229255967-05cf8400-d781-4ce5-ad07-67ccc075133b.png)
 
-![Screen Shot 2023-03-31 at 7 17 46 PM](https://user-images.githubusercontent.com/107723341/229255982-2dee8c68-0554-4beb-9ab7-eae2e8808beb.png)
+add a new shelter, or you can view the list of current shelters available, what their location is, and how many employees they have currently.
+
+![Screen Shot 2023-04-17 at 1 41 03 PM](https://user-images.githubusercontent.com/107723341/232581520-709f0b47-310b-417a-8dac-1aad655ea932.png)
+
 
 
 
