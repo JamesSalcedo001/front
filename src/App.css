@@ -60,20 +60,20 @@ code {
   border-radius: 3vh;
   float: left;
   padding: 1.5vh;
-  height: 15vh;
-  width: 15vh;
+  height: 20vh;
+  width: 20vh;
 }
 
 .image {
-  height: 15vh;
-  width: 15vh;
+  height: 20vh;
+  width: 20vh;
   padding: 1.5vh;
   float: left;
   border-radius: 3vh;
 }
 
 .catCards {
-  color:rgb(127, 186, 192);
+  color: rgb(196, 159, 122);
   margin-left: 0.8vw;
   width: 45vw;
   height: auto;
@@ -88,19 +88,15 @@ code {
 }
 
 #catSec {
-  /* background-color: black; */
-   width: auto;
-   /* height: fit-content; */
+  width: auto;
   padding: 1vh;
   text-align: center;
   border-radius: 3vh;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 #shelterSec {
-  /* background-color: black; */
    width: auto;
-   /* height: auto; */
    text-align: center;
    padding: 1vh;
    border-radius: 3vh;
@@ -150,7 +146,8 @@ code {
 }
 
 .shelterCards {
-  color:rgb(127, 186, 192);
+  color:rgb(196, 159, 122);
+  text-align: center;
   margin-left: -0.7vw;
   width: 30vw;
   height: 35vh;
@@ -184,6 +181,7 @@ code {
   margin-top: 2vh;
   font-size: x-large;
   margin-right: 2vw;
+  margin-bottom: 2vh;
 }
 
 #cardForm {

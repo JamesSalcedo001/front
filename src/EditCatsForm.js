@@ -4,7 +4,7 @@ function EditCatsForm({editCat, changeHandler, catObj}) {
 
     const history = useHistory()
 
-    function handlChange(e) {
+    function handleChange(e) {
         changeHandler(e.target.name, e.target.value)
     }
 
@@ -35,14 +35,26 @@ function EditCatsForm({editCat, changeHandler, catObj}) {
     return (
         <div>
             <section>
-                <form onSubmit={submitEditForm}>
-                    <input className="formInput" type="text" name="cat_name" placeholder="cat_name" onChange={handlChange} value={catObj.cat_name ?? ""} />
-                    <input className="formInput" type="text" name="cat_image" placeholder="cat_image" onChange={handlChange} value={catObj.cat_image ?? ""} />
-                    <input className="formInput" type="text" name="breed" placeholder="breed" onChange={handlChange} value={catObj.breed ?? ""} />
-                    <input className="formInput" type="number" name="age" placeholder="age" step="1" max="12" min="1" onChange={handlChange} value={catObj.age ?? ""} />
-                    <input className="formInput" type="text" name="descr" placeholder="descr" onChange={handlChange} value={catObj.descr ?? ""} />
-                    <input className="formInput"  type="number" name="shelter_id" step="1" max="10" min="1" placeholder="shelter_id" onChange={handlChange} value={catObj.shelter_id ?? ""} />
-                    <input type="submit" value="Update Cat"/>
+                <form className="formStyle" onSubmit={submitEditForm}>
+                    <label htmlFor="Cat Name">Cat Name</label>
+                    <input className="formInput" type="text" name="cat_name" placeholder="cat_name" onChange={handleChange} value={catObj.cat_name ?? ""} />
+
+                    <label htmlFor="Cat Image">Cat Image</label>
+                    <input className="formInput" type="text" name="cat_image" placeholder="cat_image" onChange={handleChange} value={catObj.cat_image ?? ""} />
+
+                    <label htmlFor="Cat Breed">Cat Breed</label>
+                    <input className="formInput" type="text" name="breed" placeholder="breed" onChange={handleChange} value={catObj.breed ?? ""} />
+
+                    <label htmlFor="Cat Age">Cat Age</label>
+                    <input className="formInput" type="number" name="age" placeholder="age" step="1" max="12" min="1" onChange={handleChange} value={catObj.age ?? ""} />
+
+                    <label htmlFor="Cat Description">Cat Description</label>
+                    <input className="formInput" type="text" name="descr" placeholder="descr" onChange={handleChange} value={catObj.descr ?? ""} />
+
+                    <label htmlFor="Shelter ID">Shelter ID</label>
+                    <input className="formInput" type="number" name="shelter_id" step="1" max="10" min="1" placeholder="shelter_id" onChange={handleChange} value={catObj.shelter_id ?? ""} />
+
+                    <input className="formInput" type="submit" value="Update Cat"/>
                 </form>
             </section>
         </div>

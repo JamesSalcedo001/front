@@ -72,7 +72,7 @@ function AddCatForm({addCat, shelters}) {
                     <label htmlFor="image">Cat ImageURL</label>
                     <input className="formInput" type="text" name="cat_image" value={formData.cat_image} onChange={changeHandler} placeholder="image"/>
 
-                    <label htmlFor="shelter_id">Closest Shelter</label>
+                    <label htmlFor="shelter_id">Shelter</label>
                     <select className="formInput" name="shelter_id" value={formData.shelter_id} onChange={changeHandler}>{shelterList}</select>
                     
                     <input className="formInput" type="submit" value="Add Cat"/>
