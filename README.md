@@ -46,13 +46,6 @@ Shelters:
 To interact with the app, in the header there are four nav links. You can view a list of cats in the shelters, add a new cat to the shelter, add a new shelter, or you can view the list of current shelters available. On the cards, you can edit the cat information with the Edit button, and remove the cat from the shelters with the Adopt button.
 
 
-![Screen Shot 2023-03-31 at 7 16 31 PM](https://user-images.githubusercontent.com/107723341/229255868-0f19c4bf-6ee2-4c09-804c-a6f93dfac1fd.png)
-
-![Screen Shot 2023-03-31 at 7 17 22 PM](https://user-images.githubusercontent.com/107723341/229255967-05cf8400-d781-4ce5-ad07-67ccc075133b.png)
-
-![Screen Shot 2023-03-31 at 7 17 46 PM](https://user-images.githubusercontent.com/107723341/229255982-2dee8c68-0554-4beb-9ab7-eae2e8808beb.png)
-
-
 
 ## Contributing
 
