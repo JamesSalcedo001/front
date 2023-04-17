@@ -16,41 +16,6 @@ code {
     monospace;
 }
 
-
-
-/* .cardBox {
-  margin-left: -0.6vw;
-  background-color: rgb(163, 137, 66);
-  padding: 2.6vw;
-  width: 94.5vw;
-  border-radius: 3vh;
-  display: grid;
-  grid-template-columns: repeat(3, 29.5vw);
-  grid-auto-rows: minmax(150px, auto);
-  justify-content: center;
-  gap: 4vh 2.5vw;
-}
-
-.cards {
-  color:rgb(127, 186, 192);
-  margin-left: -0.7vw;
-  width: 30vw;
-  height: 35vh;
-  background-color: rgb(78, 57, 19);
-  border: 0.4vh solid rgb(186, 194, 122);
-  border-radius: 3vh;
-}
-
-.cardButton {
-  background-color: rgb(168, 78, 26);
-  color: rgb(247, 231, 231);
-  height: 6vh;
-  border-radius: 1.9vh;
-  margin-top: 2vh;
-  font-size: x-large;
-  margin-right: 2vw;
-} */
-
 #headerSection {
   background-color: rgb(176, 171, 128);
   height: 15vh;
@@ -63,6 +28,8 @@ code {
   justify-content: space-between;
   align-items: center;
 }
+
+
 
 .navButtons {
   background-color: rgb(196, 159, 122);
@@ -89,6 +56,57 @@ code {
   padding: 6vh;
 }
 
+.shelterImage {
+  border-radius: 3vh;
+  float: left;
+  padding: 1.5vh;
+  height: 15vh;
+  width: 15vh;
+}
+
+.image {
+  height: 15vh;
+  width: 15vh;
+  padding: 1.5vh;
+  float: left;
+  border-radius: 3vh;
+}
+
+.catCards {
+  color:rgb(127, 186, 192);
+  margin-left: 0.8vw;
+  width: 45vw;
+  height: auto;
+  background-color: rgb(78, 57, 19);
+  border: 0.4vh solid rgb(186, 194, 122);
+  border-radius: 3vh;
+  transition: 0.3s;
+}
+
+.catCards:hover {
+  translate: -20px -20px -20px;
+}
+
+#catSec {
+  /* background-color: black; */
+   width: auto;
+   /* height: fit-content; */
+  padding: 1vh;
+  text-align: center;
+  border-radius: 3vh;
+  margin-bottom: 5vh;
+}
+
+#shelterSec {
+  /* background-color: black; */
+   width: auto;
+   /* height: auto; */
+   text-align: center;
+   padding: 1vh;
+   border-radius: 3vh;
+}
+
+
 .formStyle {
   font-size: large;
   color: rgb(157, 113, 70);
@@ -103,27 +121,7 @@ code {
   margin: auto;
 } 
 
- .formInput {
-  background-color: rgb(116, 155, 196);
-  padding: 2vh;
-  border-radius: 2vh;
-  margin-top: 3vh;
-  margin-bottom: 2vh;
-  font-size: larger;
-} 
 
-.image {
-  height: 18vh;
-  width: 18vh;
-  padding: 1.5vh;
-  float: left;
-  border-radius: 3vh;
-}
-
-
-
-
-/* form on cards */
 
 .catCardBox {
   background-color: rgb(163, 137, 66);
@@ -136,50 +134,9 @@ code {
   gap: 5vh 2vw;
 }
 
-.catCards {
-  color:rgb(127, 186, 192);
-  margin-left: 0.8vw;
-  width: 45vw;
-  height: max-content;
-  background-color: rgb(78, 57, 19);
-  border: 0.4vh solid rgb(186, 194, 122);
-  border-radius: 3vh;
-  transition: 0.3s;
-}
-
-.catCards:hover {
-  translate: -20px -20px -20px;
-}
-
-.cardButton {
-  background-color: rgb(168, 78, 26);
-  color: rgb(247, 231, 231);
-  height: 6vh;
-  border-radius: 1.9vh;
-  margin-top: 2vh;
-  font-size: x-large;
-  margin-right: 2vw;
-}
-
-#cardForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: rgb(78, 57, 19);
-  width: 80%;
-  margin: auto;
-}
-
-.formInputCard {
-  background-color: rgb(116, 155, 196);
-  padding: 0.2vh;
-  font-size: large;
-}
 
 
-
- .shelterCardBox {
+.shelterCardBox {
   margin-left: -0.6vw;
   background-color: rgb(163, 137, 66);
   padding: 2.6vw;
@@ -208,10 +165,49 @@ code {
   translate: -20px -20px -20px;
 }
 
-#selector {
-  margin-left: 1vw;
-  border-radius: 1vh;
-  background-color: rgb(127, 186, 192);
+ .formInput {
+  background-color: rgb(116, 155, 196);
+  padding: 2vh;
+  border-radius: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-size: larger;
+} 
+
+
+
+.cardButton {
+  background-color: rgb(168, 78, 26);
+  color: rgb(247, 231, 231);
+  height: 6vh;
+  border-radius: 1.9vh;
+  margin-top: 2vh;
+  font-size: x-large;
+  margin-right: 2vw;
+}
+
+#cardForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(78, 57, 19);
+  width: 80%;
+  margin: auto;
+}
+
+.formInputCard {
+  background-color: rgb(116, 155, 196);
+  padding: 0.2vh;
   font-size: large;
-  color: rgb(4, 19, 72);
+}
+
+
+#selector {
+  background-color: rgb(116, 155, 196);
+  padding: 2vh;
+  border-radius: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-size: larger;
 }

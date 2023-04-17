@@ -1,10 +1,10 @@
 import ShelterCard from "./ShelterCard"
 
-function SheltersList({shelters, catState}) {
+function SheltersList({shelters}) {
     
     const shelterMap = shelters.map(shelterObj => {
         return (
-            <ShelterCard key={shelterObj.id} shelterObj={shelterObj} catState={catState}/>
+            <ShelterCard key={shelterObj.id} shelterObj={shelterObj}/>
         )
     })
     return (

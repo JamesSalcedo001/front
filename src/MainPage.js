@@ -1,87 +1,3 @@
-// import AddCatForm from "./AddCatForm"
-// import AddShelterForm from "./AddShelterForm"
-// import CatsList from "./CatsList"
-// import SheltersList from "./SheltersList"
-// import {useState, useEffect} from "react"
-// import { Route, Switch } from 'react-router-dom';
-
-
-// function MainPage() {
-//     const [cats, setCats] = useState([])
-//     const [shelters, setShelters] = useState([])
-
-//     useEffect(() => {
-//         fetch("http://localhost:9292/cats")
-//         .then((res) => res.json())
-//         .then((catCollection) => setCats(catCollection))
-//       },[])
-      
-    
-//       useEffect(() => {
-//         fetch("http://localhost:9292/shelters")
-//         .then((res) => res.json())
-//         .then((shelterCollection) => setShelters(shelterCollection))
-//       },[])
-
-
-//       function addCat(newCat) {
-//         setCats((catArr) => [...catArr, newCat])
-//       }
-
-//       function addShelter(newShelter) {
-//         setShelters((shelterArr) => [...shelterArr, newShelter])
-//       }
-
-//       function catRemoved(id) {
-//         const removedCatArr = cats.filter((catObj) => catObj.id !== id)
-//         setCats(removedCatArr)
-//       }
-
-
-//       function editCat(target) {
-//         const updateCats = cats.map((catObj) => {
-//             if (catObj.id === target.id) {
-//                 return target
-//             } else {
-//                 return catObj
-//             }
-//         })
-//         setCats(updateCats)
-//       }
-
-
-//     return (
-//         <div>
-//             <Switch>
-//                  <Route exact path="/add-cat-form">
-//                     <AddCatForm addCat={addCat}/>
-//                 </Route> 
-
-//                 <Route exact path="/add-shelter-form">
-//                     <AddShelterForm addShelter={addShelter}/> 
-//                 </Route>
-
-//                 <Route exact path="/shelters">
-//                     <SheltersList shelters={shelters} cats={cats} />
-//                 </Route>
-
-//                 <Route exact path="/">
-//                     <CatsList cats={cats} catRemoved={catRemoved} editCat={editCat} />
-//                 </Route>
-
-//             </Switch>
-
-//         </div>
-//     )
-// }
-
-// export default MainPage;
-
-
-
-
-
-
 
 import {useState, useEffect} from "react"
 import {Route, Switch} from "react-router-dom"
@@ -148,7 +64,7 @@ function MainPage() {
                 </Route>
 
                 <Route exact path="/shelters">
-                    <SheltersList shelters={shelterState} catState={catState}/>
+                    <SheltersList shelters={shelterState} />
                 </Route>
 
                 <Route exact path="/add_shelter">
