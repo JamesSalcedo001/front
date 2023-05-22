@@ -30,7 +30,6 @@ function EditCatsForm({editCat, changeHandler, catObj}) {
         history.push("/")
     }
 
-    if(!catObj) return null;
 
     return (
         <div>

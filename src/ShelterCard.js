@@ -2,8 +2,6 @@
 function ShelterCard({shelterObj}) {
     const {name, location, image, employees} = shelterObj
 
- 
-
     return (
         <div className="shelterCards">
             <img className="image" alt={name} src={image}/>
