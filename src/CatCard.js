@@ -9,7 +9,6 @@ function CatCard({catObj, catRemoved, setClickedCat}) {
     const shelterEmployees = catObj.shelter.employees
     const shelterLocation = catObj.shelter.location
 
-
     function editCatButton() {
         setClickedCat(catObj)
     }
